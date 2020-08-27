@@ -10,7 +10,7 @@ public class Student {
     private String studentName; // (first name, middle name, last name)
     private long studentUniversityRollNumber;
     private int numberOfBooksIssuedByStudent;
-    private String[] nameOfBooksIssuedByStudent;
+    private Book[] nameOfBooksIssuedByStudent;
 
     /**
      * This method returns the name of the student.
@@ -71,7 +71,7 @@ public class Student {
      *
      * @return The names of all the books issued by the student.
      */
-    public String[] getNameOfBooksIssuedByStudent() {
+    public Book[] getNameOfBooksIssuedByStudent() {
         return nameOfBooksIssuedByStudent.clone();
     }
 
@@ -80,7 +80,7 @@ public class Student {
      *
      * @param nameOfBooksIssuedByStudent The names of all the books that are issued by student.
      */
-    public void setNameOfBooksIssuedByStudent(String[] nameOfBooksIssuedByStudent) {
+    public void setNameOfBooksIssuedByStudent(Book[] nameOfBooksIssuedByStudent) {
         this.nameOfBooksIssuedByStudent = nameOfBooksIssuedByStudent;
     }
 }

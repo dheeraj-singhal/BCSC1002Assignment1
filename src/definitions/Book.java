@@ -76,4 +76,8 @@ public class Book {
     public void setBookISBNNumber(String bookISBNNumber) {
         this.bookISBNNumber = bookISBNNumber;
     }
+
+    public String toString() {
+        return String.format("Name of the Book : %s, Author Name : %s, 13-Digit ISBN Number : %s", getBookName(), getBookAuthor(), getBookISBNNumber());
+    }
 }

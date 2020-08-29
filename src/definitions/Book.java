@@ -25,6 +25,10 @@ public class Book {
         this.bookISBNNumber = bookISBNNumber;
     }
 
+    public Book(String bookName) {
+        this.bookName = bookName;
+    }
+
     /**
      * This method returns the name of the book.
      *

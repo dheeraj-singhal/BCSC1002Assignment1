@@ -46,11 +46,11 @@ public class Library {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Library library = (Library) o;
-        return Arrays.equals(booksCurrentlyAvailable, library.booksCurrentlyAvailable);
+        return Arrays.equals(getBooksCurrentlyAvailable(), library.getBooksCurrentlyAvailable());
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(booksCurrentlyAvailable);
+        return Arrays.hashCode(getBooksCurrentlyAvailable());
     }
 }

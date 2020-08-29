@@ -92,13 +92,13 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(bookName, book.bookName) &&
-                Objects.equals(bookAuthor, book.bookAuthor) &&
-                Objects.equals(bookISBNNumber, book.bookISBNNumber);
+        return Objects.equals(getBookName(), book.getBookName()) &&
+                Objects.equals(getBookAuthor(), book.getBookAuthor()) &&
+                Objects.equals(getBookISBNNumber(), book.getBookISBNNumber());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookName, bookAuthor, bookISBNNumber);
+        return Objects.hash(getBookName(), getBookAuthor(), getBookISBNNumber());
     }
 }

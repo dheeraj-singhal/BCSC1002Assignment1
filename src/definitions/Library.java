@@ -9,6 +9,13 @@ package definitions;
 public class Library {
     private Book[] booksCurrentlyAvailable;
 
+    public Library() {
+        this.booksCurrentlyAvailable = new Book[10];
+        for (int initialBook = 0; initialBook < booksCurrentlyAvailable.length; initialBook++) {
+            booksCurrentlyAvailable[initialBook] = new Book();
+        }
+    }
+
     /**
      * This method returns the names of all the books which are currently available in the Library.
      *

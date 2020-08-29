@@ -12,6 +12,13 @@ public class Student {
     private int numberOfBooksIssuedByStudent;
     private Book[] nameOfBooksIssuedByStudent;
 
+    public Student() {
+        this.nameOfBooksIssuedByStudent = new Book[10];
+        for (int i = 0; i < nameOfBooksIssuedByStudent.length; i++) {
+            nameOfBooksIssuedByStudent[i] = new Book();
+        }
+    }
+
     /**
      * This method returns the name of the student.
      *

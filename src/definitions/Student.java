@@ -15,8 +15,15 @@ public class Student {
     public Student() {
         this.nameOfBooksIssuedByStudent = new Book[10];
         for (int i = 0; i < nameOfBooksIssuedByStudent.length; i++) {
-            nameOfBooksIssuedByStudent[i] = new Book();
+            nameOfBooksIssuedByStudent[i] = new Book("Book " + (i + 1));
         }
+    }
+
+    public Student(String studentName, long studentUniversityRollNumber, int numberOfBooksIssuedByStudent, Book[] nameOfBooksIssuedByStudent) {
+        this.studentName = studentName;
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+        this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
+        this.nameOfBooksIssuedByStudent = nameOfBooksIssuedByStudent;
     }
 
     /**

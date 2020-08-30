@@ -101,6 +101,17 @@ public class Student {
         this.nameOfBooksIssuedByStudent = nameOfBooksIssuedByStudent;
     }
 
+    /**
+     * This method checks the name of the book student want to issue.
+     *
+     * @param nameOfBook name of the book student want to issue.
+     */
+    public void issueNewBook(String nameOfBook) {
+        System.out.println("The book : " + nameOfBook + " is issued to you successfully.");
+        nameOfBooksIssuedByStudent[numberOfBooksIssuedByStudent].setBookName(nameOfBook);
+        numberOfBooksIssuedByStudent++;
+    }
+
     @Override
     public String toString() {
         return String.format("Student name : %s, Student University Roll Number : %d, " +

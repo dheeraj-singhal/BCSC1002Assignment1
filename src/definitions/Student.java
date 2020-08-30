@@ -104,12 +104,21 @@ public class Student {
     /**
      * This method checks the name of the book student want to issue.
      *
-     * @param nameOfBook name of the book student want to issue.
+     * @param nameOfBookToIssue name of the book you want to issue.
      */
-    public void issueNewBook(String nameOfBook) {
-        System.out.println("The book : " + nameOfBook + " is issued to you successfully.");
-        nameOfBooksIssuedByStudent[numberOfBooksIssuedByStudent].setBookName(nameOfBook);
+    public void issueNewBook(String nameOfBookToIssue) {
+        System.out.println("The book : " + nameOfBookToIssue + " is issued to you successfully.");
+        nameOfBooksIssuedByStudent[numberOfBooksIssuedByStudent].setBookName(nameOfBookToIssue);
         numberOfBooksIssuedByStudent++;
+    }
+
+    /**
+     * This method checks the name of the book that student want to return.
+     *
+     * @param nameOfBookToReturn name of the book you want to return.
+     */
+    public void returnBook(String nameOfBookToReturn) {
+        System.out.println("The book : " + nameOfBookToReturn + " is returned successfully to the library.");
     }
 
     @Override

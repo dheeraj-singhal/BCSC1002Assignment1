@@ -121,6 +121,15 @@ public class Student {
         System.out.println("The book : " + nameOfBookToReturn + " is returned successfully to the library.");
     }
 
+    /**
+     * This method shows the name of all the books that are issued by the student.
+     */
+    public void allIssuedBooks() {
+        for (Book book : nameOfBooksIssuedByStudent) {
+            System.out.println(book);
+        }
+    }
+
     @Override
     public String toString() {
         return String.format("Student name : %s, Student University Roll Number : %d, " +
